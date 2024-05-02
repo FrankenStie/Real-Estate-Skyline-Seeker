@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="LogoWEBP.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skyline Seeker</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h4><i class="image"></i><img src="Logo.png" height="15" width="100"> <img src="logo2-removebg-preview.png"
+                    height="20" width="33"></h4>
+            <div class="right_bx">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i>Language</a></li>
+                    <li><a href="#">List your Property</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Rent</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Home Loan</a></li>
+                </ul>
+                <div class="account_bx">
+                    <i class="bi bi-app-indicator"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Skyline <br> Seeker</h1>
+                <p>Where Every Horizon Holds A Promise, And Every Skyline Tells A Story. Welcome To Skyline Seeker,
+                    Where Dreams Meet The Sky.
+                    In The Quest For The Perfect Skyline
+                <h5>Hotel Reservation, Apartments, Resorts and House & Lot</h5>
+                <f>Real Estate</f>
+                </p>
+
+                <div class="weather">
+                    <h6><span id="temperature">35</span>°C<span>Moderate</span></h6>
+                </div>
+
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" onclick="decreaseTemperature()"></i>
+                    <i class="bi bi-arrow-right" onclick="increaseTemperature()"></i>
+                </div>
+
+            </div>
+
+            <div class="choose_bx">
+                <div class="stay_bx">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+
+                <div class="select">
+                    <div class="card">
+                        <h5>Philippines</h5>
+                        <input type="text" value="Cebu">
+                        <input type="text" value="Danao">
+                    </div>
+                    <div class="card">
+                        <h5>People</h5>
+                        <input type="text" value="5 People" id="people">
+                        <button id="people_less">Less</button>
+                        <button id="people_more">More</button>
+
+                    </div>
+                    <!--card3-->
+                    <div class="card">
+                        <div class="left_box">
+                            <h5>Check In</h5>
+                            <div class="date">
+                                <h3 id="checkin_date">Sat, 05 Jan</h3>
+                                <input type="date" id="checkin" value="2024-08-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+
+                        </div>
+                        <div class="right_box">
+                            <h5>Check Out</h5>
+                            <div class="date">
+                                <h3 id="checkout_date">Sun, 06 Jan</h3>
+                                <input type="date" id="checkout" value="2022-08-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="pic">
+        <div class="vid">
+            <video autoplay muted loop class="header-video">
+                <source src="Compressed.mp4">
+            </video>
+        </div>
+
+    </div>
+    <div class="home">
+        <div class="title_button">
+            <h2>SATISFIED PROPERTY OWNERS</h2>
+        </div>
+
+        <div class="home_bx">
+            <div class="card">
+                <img src="luxhouse1.png" alt="House2">
+
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Philippines</h4>
+                        <p>Cebu City</p>
+                    </div>
+                    <div class="profile">
+                        <img src="avatar-1.jpg" alt="Profile">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="house5.jpg" alt="House2">
+
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Philippines</h4>
+                        <p>Danao City, Cebu</p>
+                    </div>
+                    <div class="profile">
+                        <img src="avatar-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="luxhouse3.png" alt="House2">
+
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Philippines</h4>
+                        <p>Mandaue, Cebu</p>
+                    </div>
+                    <div class="profile">
+                        <img src="avatar-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="luxhouse2.jpg" alt="House2">
+
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Philippines</h4>
+                        <p>Mandaue, Cebu City</p>
+                    </div>
+                    <div class="profile">
+                        <img src="avatar-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="luxhouse4.jpg" alt="House2">
+
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Philippines</h4>
+                        <p>Talisay City</p>
+                    </div>
+                    <div class="profile">
+                        <img src="avatar-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="feedback">
+            <p>
+                Skyline Seeker Real Estate is your premier destination for finding the perfect property to call home.
+                <b>Olivia</b> - "Skyline Seeker made the home-buying process seamless with their exceptional support and
+                expertise!". Our intuitive website features an extensive range of listings, complete with detailed
+                descriptions and stunning photos, making it easy to explore your options. Backed by a dedicated team of
+                real estate experts, we provide unparalleled support and guidance throughout your home-buying journey,
+                ensuring a seamless and stress-free experience. With Skyline Seeker, discovering your dream home has
+                never been easier.
+                <b>Alex</b> - "I highly recommend Skyline Seeker for their professionalism and dedication to finding the
+                right property!<b>Sarah</b>- "Skyline Seeker's detailed listings and responsive team made finding my
+                perfect home a breeze!"
+            </p>
+            <p>What truly sets us apart is our unwavering commitment to personalized service. At Skyline Seeker, we
+                understand that each home seeker is unique, with distinct needs and aspirations. Our team of seasoned
+                professionals is dedicated to understanding your vision, guiding you every step of the way with expert
+                advice and unwavering support. Whether you're a first-time buyer or a seasoned investor, we're here to
+                ensure that your journey towards homeownership is not only successful but also enjoyable. <b> Daniel</b>
+                - "Thanks to Skyline Seeker, I found my dream home faster than I expected!.
+                Our platform offers an expansive array of listings, meticulously curated to cater to every taste and
+                preference. <b>Emma</b> - "Skyline Seeker's user-friendly website and personalized service exceeded my
+                expectations!"</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="box">
+            <div class="img_bx">
+                <img src="house2.jpg" alt="house">
+            </div>
+
+            <div class="cont_box">
+                <h6><span>SKYLINE SEEKER REAL ESTATE</span></h6>
+                <h1>We Specialize in Quality <br> Home Reservation</h1>
+                <p>Looking to Renovate your home to reflect your style and <br> personality? look no further than our
+                    team of experts who <br> specialize
+                    in quality home renovations to transform your space <br> into a dream home you'll love. from design
+                    to execution.</p>
+                <ul>
+                    <li><i class="bi bi-check-circle"></i>Smart Home</li>
+                    <li><i class="bi bi-check-circle"></i>Exceptional Lifestyle</li>
+                    <li><i class="bi bi-check-circle"></i>Beautiful Scene Around</li>
+                    <li><i class="bi bi-check-circle"></i>Complete 24/7 Security</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="box1">
+            <div class="cont_box1">
+                <h1>We Specialize in Quality <br> Home Reservation</h1>
+                <p>Looking to Renovate your home to reflect your style and <br> personality? look no further than our
+                    team of experts who <br> specialize
+                    in quality home renovations to transform your space <br> into a dream home you'll love. from design
+                    to execution.</p>
+                <ul>
+                    <li></i>Smart Home <i class="bi bi-check-circle"></i></li>
+                    <li></i>Exceptional Lifestyle <i class="bi bi-check-circle"></i></li>
+                    <li></i>Beautiful Scene Around <i class="bi bi-check-circle"></i></li>
+                    <li></i>Complete 24/7 Security <i class="bi bi-check-circle"></i></li>
+                </ul>
+            </div>
+
+            <div class="img_bx1">
+                <img src="house8.jpg" alt="house">
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="box">
+            <div class="img_bx">
+                <img src="house7.jpg" alt="house">
+            </div>
+
+            <div class="cont_box">
+                <h1>We Specialize in Quality <br> Home Reservation</h1>
+                <p>Looking to Renovate your home to reflect your style and <br> personality? look no further than our
+                    team of experts who <br> specialize
+                    in quality home renovations to transform your space <br> into a dream home you'll love. from design
+                    to execution.</p>
+                <ul>
+                    <li><i class="bi bi-check-circle"></i>Smart Home</li>
+                    <li><i class="bi bi-check-circle"></i>Exceptional Lifestyle</li>
+                    <li><i class="bi bi-check-circle"></i>Beautiful Scene Around</li>
+                    <li><i class="bi bi-check-circle"></i>Complete 24/7 Security</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="box1">
+            <div class="cont_box1">
+
+                <h1>We Specialize in Quality <br> Home Reservation</h1>
+                <p>Looking to Renovate your home to reflect your style and <br> personality? look no further than our
+                    team of experts who <br> specialize
+                    in quality home renovations to transform your space <br> into a dream home you'll love. from design
+                    to execution.</p>
+                <ul>
+                    <li></i>Smart Home <i class="bi bi-check-circle"></i></li>
+                    <li></i>Exceptional Lifestyle <i class="bi bi-check-circle"></i></li>
+                    <li></i>Beautiful Scene Around <i class="bi bi-check-circle"></i></li>
+                    <li></i>Complete 24/7 Security <i class="bi bi-check-circle"></i></li>
+                </ul>
+            </div>
+
+            <div class="img_bx1">
+                <img src="house6.jpg" alt="house">
+            </div>
+        </div>
+    </section>
+    <!--SLIDE PICTURE-->
+    <div class="contain">
+        <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded"><i
+                    class="bi bi-arrow-left"></i></button>
+            <div class="image-list">
+                <div class="image-item">
+                    <img src="property-1.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱2,000,000</b> <br> Spacious family home with modern
+                        amenities
+                        <br></i>Facilities: <f class="recta"> Garden </f>
+                        <f class="recta1">Club House</f> <i class="fa-solid fa-bed"></i> 3 <i
+                            class="fa-solid fa-shower"></i> 2
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="property-2.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱7,000,000</b> <br> Luxurious villa with panoramic City
+                        views
+                        <br></i>Facilities: <f class="recta"> Garden </f>
+                        <f class="recta1">Club House</f>
+                        <f class="recta2">Swimming Pool</f>
+                        <f class="recta3">Function Room</f><i class="fa-solid fa-bed"></i> 6 <i
+                            class="fa-solid fa-shower"></i> 3
+                    </div>
+
+                </div>
+                <div class="image-item">
+                    <img src="property-3.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱7.5 M</b> <br> Luxurious Modern House
+                        <br></i>Facilities: <f class="recta4"> Entertainment Area </f>
+                        <f class="recta1">Club House</f>
+                        <f class="recta5">Garden</f>
+                        <f class="recta3">Function Room</f><i class="fa-solid fa-bed"></i> 6 <i
+                            class="fa-solid fa-shower"></i> 3
+                    </div>
+                </div>
+                <div class="image-item">
+                    <img src="property-4.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱3.3 M</b> <br> Modern House
+                        <br></i>Facilities: <f class="recta5">Garden</f> <i class="fa-solid fa-bed"></i> 3 <i
+                            class="fa-solid fa-shower"></i> 1
+                    </div>
+                    <div class="description">Contemporary urban loft with city skyline vistas</div>
+                </div>
+                <div class="image-item">
+                    <img src="property-5.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱5.6 M</b> <br> Luxurious villa
+                        <br></i>Facilities: <f class="recta"> Garden </f>
+                        <f class="recta1">Club House</f>
+                        <f class="recta6">Entertainment Room</f>
+                        <f class="recta6">Conference Room</f>
+                        <f class="recta7">Function Room</f><i class="fa-solid fa-bed"></i> 5 <i
+                            class="fa-solid fa-shower"></i>2
+                    </div>
+                    <div class="description">Elegant townhouse with lush garden surroundings</div>
+                </div>
+                <div class="image-item">
+                    <img src="property-6.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱2,000,000</b> <br> Elegant townhouse with lush garden
+                        surroundings
+                        <br></i>Facilities: <f class="recta"> Garden </f>
+                        <f class="recta1">Club House</f> <i class="fa-solid fa-bed"></i> 4<i
+                            class="fa-solid fa-shower"></i>1
+                    </div>
+                    <div class="description">Spectacular waterfront mansion with private dock</div>
+                </div>
+                <div class="image-item">
+                    <img src="property-7.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱600,000</b> <br> Tranquil country estate with sprawling
+                        acres of
+                        land
+                        <br></i>Facilities: <f class="recta"> Garden </f><i class="fa-solid fa-bed"></i> 3<i
+                            class="fa-solid fa-shower"></i>1
+                    </div>
+
+                </div>
+                <div class="image-item">
+                    <img src="property-8.jpg" alt="house">
+                    <div class="price"><b>For Sale: ₱900,000</b> <br> Classic Fancy Red Velvet House
+                        <br></i>Facilities: <f class="recta"> Garden </f><i class="fa-solid fa-bed"></i> 3<i
+                            class="fa-solid fa-shower"></i>1
+                    </div>
+                </div>
+            </div>
+            <button id="next-slide" class="slide-button material-symbols-rounded"><i
+                    class="bi bi-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+    <footer class="footer_div">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <div class="footer-col">
+                        <h5>Property Seekers</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Buy a Property</a>
+                                <a href="#">Rent a Property</a>
+                                <a href="#">Find an Agent</a>
+                                <a href="#">Property Buyer Guides</a>
+                                <a href="#">Life & Style Trends</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h5>Agents</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Upload a Listing</a>
+                                <a href="#">Listing Creation Guide</a>
+                                <a href="#">FAQs</a>
+                                <a href="#">Property Agent Guides</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Terms Of Use</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Careers</a>
+                            <a href="#">About</a>
+                            <a href="#">CA Supply Chains Act</a>
+                            <a href="#">Sustainability Hub</a>
+                            <a href="#">Checkerboard Fund</a>
+                            <a href="#">Affiliate Program</a>
+                            <a href="#">Unsolicited Materials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>About</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Email</a>
+                            <a href="#">Contact Us</a>
+                            <a href="#">Adress</a>
+                            <a href="#">Philippines Sabang Danao City, Cebu 6004</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Blog</a>
+                            <a href="#">How to</a>
+                            <a href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col subscribe">
+                <h5>EMAIL US</h5>
+                <p>Receive new listings and Properties in your inbox.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+    <div class="footer2">
+        <p class="logo"><img src="Logo.png" style="max-width: 50%; height: auto; transform: scale(0.3); margin: 0;"
+                alt="Logo">
+            <f class="sky"> ©Skyline Seeker All Rights Reserved 2024.</f>
+        </p>
+
+        <div class="footer-col1">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js/script.js"></script>
+</body>
+
+</html>
